@@ -1,0 +1,3 @@
+CUDA_VISIBLE_DEVICES=3 python training_model2.py 50 ./test-model-m2.ckpt test-multiG-m2.bin ../preprocess/60k/en_60k.csv ../preprocess/60k/fr_60k.csv ../preprocess/60k/en_fr_60k_train25.csv
+CUDA_VISIBLE_DEVICES=3 python test_detail_model2.py test-model-m2.ckpt test-multiG-m2.bin ../preprocess/60k/en_fr_60k_test75.csv ../results/detail/detail_result_m2.txt
+CUDA_VISIBLE_DEVICES=3 python test_detail_model2.py test-model-m2.ckpt test-multiG-m2.bin ../preprocess/60k/en_fr_60k_test75.csv ../results/detail/detail_result_m2_limited.txt ../preprocess/60k/en_fr_60k_test75.csv #This is to test with a limited candidate space
