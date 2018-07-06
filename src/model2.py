@@ -242,7 +242,7 @@ class TFParts(object):
             
             # Optimizer
             self._lr = lr = tf.placeholder(tf.float32)
-            self._opt = opt = tf.train.AdagradOptimizer(lr)#GradientDescentOptimizer(lr)
+            self._opt = opt = tf.train.AdamOptimizer(lr)#AdagradOptimizer(lr)#GradientDescentOptimizer(lr)
             self._train_op_A = train_op_A = opt.minimize(A_loss)
             self._train_op_B = train_op_B = opt.minimize(B_loss)
             self._train_op_AM = train_op_AM = opt.minimize(AM_loss)
