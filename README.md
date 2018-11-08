@@ -8,3 +8,5 @@ Constructing and archive for a tensorflow-version MTransE that has been used in 
 		booktitle = {IJCAI}, 
 		year = {2018},
 	}
+
+Word embeddings and entity list used by KDCoE for wk3l-60k is [here](http://yellowstone.cs.ucla.edu/~muhao/kdcoe/wk3l_60k_word_embeddings.zip).
