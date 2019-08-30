@@ -9,7 +9,7 @@ Constructing and archive for a tensorflow-version MTransE that has been used in 
 		year = {2018},
 	}
 
-Word embeddings and entity list used by KDCoE for wk3l-60k is [here](http://yellowstone.cs.ucla.edu/~muhao/kdcoe/wk3l_60k_word_embeddings.zip).
+Word embeddings and entity list used by KDCoE for wk3l-60k are at [here](http://yellowstone.cs.ucla.edu/~muhao/kdcoe/wk3l_60k_word_embeddings.zip).
 
 ### KDCoE
 Run training_model2.py to train one turn of the structure encoder. Run test_detail_model2.py to get the threshold (pct in test_try.py) from detail_recall_m2.txt. Run test_try.py to propose new seed alignment from the structure encoder. Run gru_train.py and gru_test.py to set the threshold for the document encoder similarly, and run gru_try.py to propose new seed alignment. Please change input file names for different iterations.
